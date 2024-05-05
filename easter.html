@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Easter!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        width: 90%;
+        max-width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ff5f6d;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+        font-style: italic;
+        font-family: cursive;
+      }
+
+      .message {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 20px;
+        font-style: italic;
+        font-family: cursive;
+      }
+
+      .footer {
+        font-size: 14px;
+        color: #fff;
+        font-style: italic;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="title">Happy Easter!</div>
+      <div class="message">
+        Wishing you a joyful and blessed Easter filled with love, happiness, and
+        chocolate!
+      </div>
+      <div class="footer">From: [Your Name]</div>
+    </div>
+
+    <script>
+      const card = document.querySelector(".card");
+      card.addEventListener("mouseenter", function () {
+        card.style.backgroundColor = "#ff8b7b";
+      });
+
+      card.addEventListener("mouseleave", function () {
+        card.style.backgroundColor = "#ff5f6d";
+      });
+    </script>
+  </body>
+</html>
